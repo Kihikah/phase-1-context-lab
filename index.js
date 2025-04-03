@@ -42,7 +42,7 @@ function createEmployeeRecord(array) {
     const timeIn = this.timeInEvents.find(event => event.date === date);
     const timeOut = this.timeOutEvents.find(event => event.date === date);
     
-    // Fix: Make sure the hours are calculated correctly in hours (divide by 100 if in minutes)
+    
     if (timeIn && timeOut) {
       return (timeOut.hour - timeIn.hour) / 100;  // Assuming time in hours and minutes are stored as full hour values
     }
