@@ -44,7 +44,7 @@ function createEmployeeRecord(array) {
     
     
     if (timeIn && timeOut) {
-      return (timeOut.hour - timeIn.hour) / 100;  // Assuming time in hours and minutes are stored as full hour values
+      return (timeOut.hour - timeIn.hour) / 100;  
     }
     return 0;
   }
